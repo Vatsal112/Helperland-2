@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+.main{
+    margin: 0;
+    padding: 0;
+}
+.hr-sepretor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*############### Extra Services ###################*/
+
+.contact-list{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content:space-between;
+
+}
+.contactus-services{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.contactus-services h1{
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: #565656;
+}
+.h-line{
+    margin-bottom: 34px;
+    opacity: 0.5;
+}
+.contactus-services .line{
+    height: 50px;
+    width: 5%;
+}
+.c-img{
+    width: 108px;
+    height: 108px;
+    margin: 10px auto;
+    position: relative;
+}
+.c-img img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.c-list{
+    display: block;
+    text-align: center;
+}
+.c-title{
+    font-size: 1.2rem;
+}
+.c-time{
+    color: #1D7A8C;
+}
+
+/*################ Contact Form #################*/
+
+.modal-body{
+    padding: 5px;
+}
+.c-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.c-form .form-check{
+    padding: 15px 35px;
+    color: #80808094;
+    cursor: pointer;
+}
+.form-title{
+    text-align: center;
+    margin: 40px auto;
+    color: #565656;
+}
+.submit-btn{
+    text-align: center;
+}
+.submit-btn button{
+    width: 163px;
+    height: 46px;
+    margin: 10px;
+    background-color: #1D7A8C;
+    color:white;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+@media screen and (max-width:1215px) {
+    .c-form{
+        width: 80%;
+    }
+}
+
+/*################ section-googleloc ######################*/
+#section-map{
+    margin-top: 50px;
+}
+#section-map iframe{
+    width: 100%;
+    height: 400px;
+}
+
+/* Footer override CSS */
+
+#section-newsseltter{
+    background-color: rgb(255, 255, 255);
+    padding-top: 35px;
+}
+.f-sub{
+    text-align: center;
+}
+.scroll-icon, .message-icon{
+    display: none;
+}
+
+/*############# Navbar ###############*/
+
+.navbar {
+    background-color: #525252;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 73px;
+    height: 54px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 28px;
+}
+.nav-list{
+    margin-bottom: 0;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-btn {
+    border-radius: 20px;
+    background-color: #29626d;
+}
+
+.nav-btn:hover {
+    background-color: #525252;
+    color: white;
+    opacity: 1;
+}
+
+
+/* Header image */
+
+.header-image {
+    height: 370px;
+    background-image: url("../images/cleaner-title.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 64px;
+}
+
+/* For Sticky Navbar */
+
+@media screen and (max-width:990px) {
+    #section-header {
+        z-index: 0;
+        padding-bottom: 10px;
+    }
+
+    .header-image {
+        margin-top: 0;
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        background-color: #23565f;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .nav-item {
+        margin-left: 23px;
+        margin-top: 7px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-image {
+        display: none;
+    }
+    .contactus-services{
+        margin-top: 84px;
+    }
+}

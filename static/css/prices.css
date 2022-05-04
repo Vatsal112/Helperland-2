@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+/*################ Prices Section ################*/
+#section-prices {
+    margin-top: 31px;
+}
+
+.prices-title {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.prices-title h1 {
+    font-size: 2.5rem;
+    color: #565656;
+}
+
+.h-line {
+    margin-bottom: 34px;
+}
+
+.prices-title .line {
+    height: 50px;
+    width: 5%;
+}
+
+.prices-card {
+    width: 553px;
+    margin: 45px auto;
+    border: 1px solid gray;
+}
+
+.p-body {
+    color: gray;
+}
+
+.p-title {
+    background-color: #1D7A8C;
+}
+
+.p-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    position: relative;
+    font-size: 48px;
+    letter-spacing: 0.9px;
+    color: #646464;
+}
+.p-price span{
+    font-size: 1.3rem;
+    padding-top: 12px;
+
+}
+
+.p-title h2 {
+    padding: 12px 0;
+}
+
+.p-detailes {
+    margin: 15px auto;
+    align-items: center;
+
+}
+
+.p-detailes .p-inside {
+    width: 300px;
+    margin: 16px auto;
+}
+
+.p-detaile {
+    display: flex;
+    font-size: 1rem;
+}
+
+.p-detaile img {
+    height: 100%;
+    margin-right: 9px;
+}
+
+
+@media screen and (max-width:1500px) {
+    #section-prices {
+        padding: 40px 15%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    #section-prices {
+        padding: 10%;
+    }
+
+    .prices-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .prices-card {
+        width: 95%;
+    }
+
+    .p-body {
+        padding-left: 10px;
+    }
+
+    .p-detailes .p-inside {
+        width: 100%;
+        margin: 16px auto;
+        font-size: 0.5rem;
+    }
+}
+
+/*############### Extra Services ###################*/
+
+.extra-services-list {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.extra-services {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.extra-services h1 {
+    font-size: 2.5rem;
+    color: #565656;
+}
+
+.h-line {
+    margin-bottom: 34px;
+    opacity: 0.5;
+}
+
+.extra-services .line {
+    height: 50px;
+    width: 5%;
+}
+
+.e-img {
+    width: 108px;
+    height: 108px;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    border-radius: 50%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.e-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.e-service {
+    display: block;
+    text-align: center;
+}
+
+.e-title {
+    font-size: 1.2rem;
+}
+
+.e-time {
+    color: #1D7A8C;
+}
+
+/*############ Section Cleaning ########################*/
+
+#section-cleaning {
+    height: 105vh;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    padding-top: 70px;
+}
+
+.cleaning-services {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.cleaning-header {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cleaning-header h1 {
+    font-size: 2.5rem;
+    color: #565656;
+}
+
+.h-line {
+    margin-bottom: 34px;
+    opacity: 0.5;
+}
+
+.cleaning-header .line {
+    height: 50px;
+    width: 5%;
+}
+
+.content-title {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.c-img {
+    width: auto;
+}
+
+.content-list {
+    padding-left: 1px;
+}
+
+.content-list li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width:1202px) {
+    #section-cleaning {
+        height: 100%;
+    }
+
+    .c-img img {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .cleaning-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/*############ Section Helper #######################*/
+#section-whyhelper {
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.s-whyhelper {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.whyhelper-header {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.whyhelper-header h1 {
+    margin-top: 70px;
+    font-size: 2.5rem;
+    color: #565656;
+}
+
+.h-line {
+    margin-bottom: 34px;
+    opacity: 0.5;
+}
+
+.whyhelper-header .line {
+    height: 50px;
+    width: 5%;
+}
+
+.content-left {
+    text-align: right;
+}
+
+.content-right {
+    text-align: left;
+}
+
+.d-first {
+    height: 45%;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+.submit-btn button {
+    background-color: chartreuse;
+    width: 50px;
+}
+
+@media screen and (max-width:1215px) {
+    #section-whyhelper {
+        height: 100%;
+    }
+
+    .content-left {
+        text-align: center;
+    }
+
+    .content-right {
+        text-align: center;
+    }
+
+    .whyhelper-banner img {
+        width: 100%;
+        margin: 10px auto
+    }
+}
+
+/* Footer override CSS */
+
+#section-newsseltter{
+    background-color: rgb(255, 255, 255);
+}
+.f-sub{
+    text-align: center;
+}
+.scroll-icon, .message-icon{
+    display: none;
+}
+
+/*############# Navbar ###############*/
+
+.navbar {
+    background-color: #525252;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 73px;
+    height: 54px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 28px;
+}
+.nav-list{
+    margin-bottom: 0;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-btn {
+    border-radius: 20px;
+    background-color: #29626d;
+}
+
+.nav-btn:hover {
+    background-color: #525252;
+    color: white;
+    opacity: 1;
+}
+
+
+/* Header image */
+
+.header-image {
+    height: 370px;
+    background-image: url("../images/prices-title.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 64px;
+}
+
+/* For Sticky Navbar */
+
+@media screen and (max-width:990px) {
+    #section-header {
+        z-index: 0;
+        padding-bottom: 10px;
+    }
+
+    .header-image {
+        margin-top: 0;
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        background-color: #23565f;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .nav-item {
+        margin-left: 23px;
+        margin-top: 7px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    #section-prices{
+        margin-top: 50px;
+    }
+}

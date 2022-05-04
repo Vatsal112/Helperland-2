@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Section Common */
+#section-fewwords, #section-ourstory {
+    height: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fewwords-content {
+    width: 70%;
+    margin: 10px auto;
+    font-size: 19px;
+}
+
+/* Fewwords title */
+.fewwords-title {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.fewwords-title h1 {
+    margin-top: 25px;
+    font-size: 2rem;
+    color: #565656;
+}
+
+.h-line {
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.fewwords-title .line {
+    height: 50px;
+    width: 5%;
+}
+
+/* Footer override CSS */
+
+#section-newsseltter{
+    padding-top: 35px;
+    background-color: white;
+}
+.f-sub{
+    text-align: center;
+}
+.scroll-icon, .message-icon{
+    display: none;
+}
+
+/*############# Navbar ###############*/
+
+.navbar {
+    background-color: #525252;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 73px;
+    height: 54px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 28px;
+}
+.nav-list{
+    margin-bottom: 0;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-btn {
+    border-radius: 20px;
+    background-color: #29626d;
+}
+
+.nav-btn:hover {
+    background-color: #525252;
+    color: white;
+    opacity: 1;
+}
+
+
+/* Header image */
+
+.header-image {
+    height: 370px;
+    background-image: url("../images/hero-title.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 64px;
+}
+
+/* For Sticky Navbar */
+
+@media screen and (max-width:990px) {
+    #section-header {
+        z-index: 0;
+        padding-bottom: 10px;
+    }
+
+    .header-image {
+        margin-top: 0;
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        background-color: #23565f;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .nav-item {
+        margin-left: 23px;
+        margin-top: 7px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-image {
+        display: none;
+    }
+    #section-fewwords{
+        margin-top: 84px;
+    }
+}

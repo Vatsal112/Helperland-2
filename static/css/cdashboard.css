@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-image {
+    background: none;
+    background-color: #F9F9F9;
+    height: 93px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    margin-top: 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.705);
+}
+
+/*------------- section sp-dashboard ------------*/
+
+#section-cdashboard {
+    padding: 30px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.div-main {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.div-sidebar {
+    height: 610px;
+    width: 260px;
+    float: left;
+    background-color: #1d7a8c;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+
+
+.div-sidebar a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 19px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.div-sidebar .active {
+    background-color: #146371;
+}
+
+.div-content {
+    margin-left: 250px;
+    padding-left: 30px;
+}
+
+.sidebar-toggle{
+    display: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top:0;
+    left: 100%;
+    color: white;
+    background-color: #1d7a8c;
+}
+.sidebar-toggle i{
+    padding: 5px;
+    font-size: 32px;
+}
+.sidebar-toggle i.toggle:before{
+    content: "\f100";
+}
+.div-sidebar.toggle{
+    left: 0;
+}
+
+@media screen and (max-width:1200px) {
+    .div-sidebar {
+        position: fixed;
+        left: -260px;
+        top: 100px;
+        z-index: 99;
+    }
+
+    .sidebar-toggle{
+        display: block;
+    }
+
+    .div-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #section-cdashboard {
+        padding: 30px 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .div-content {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .div-main {
+        height: 100%;
+    }
+}
+
+
+table tr div img {
+    margin-right: 5px;
+}
+
+table thead {
+    height: 50px;
+    background-color: #f9f9f9;
+}
+
+table thead th img{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+table tbody td {
+    line-height: 26px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    background-color: #ffffff
+}
+
+table tr {
+    padding: 10px !important;
+    background-color: white;
+}
+
+table tbody {
+    border-top: 0;
+    color: #646464;
+}
+
+.td-rating {
+    display: flex;
+    align-items: center;
+}
+
+.td-rating .rating-user {
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+}
+.td-rating .rating-user img{
+    width: 48px;
+    height: 48px;
+    margin-right: 0;
+}
+
+.td-rating .rating-info {
+    margin-left: 10px;
+}
+
+.td-currn {
+    font-size: 20px;
+    color: #1d7a8c;
+    font-weight: 700;
+}
+
+.td-currn span {
+    font-size: 26px;
+}
+
+@media screen and (max-width:664px) {
+    .div-main{
+        padding:0;
+    }
+    table{
+       border-collapse: separate;
+       border-spacing: 20px;
+    }
+    #servicehistory table thead{
+        height: 0;
+    }
+    thead tr{
+        display: none;
+    }
+    tbody tr{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        margin-bottom: 15px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.514);
+    }
+    tbody tr td{
+        padding-left: 8px;
+    }
+    .td-price, .btn-status, .btn-ratesp{
+        text-align: center;
+    }
+    .pros{
+        justify-content: center !important;
+    }
+}
+
+.btn-status button {
+    margin-top: 10px;
+    color: white;
+    padding: 1px 10px;
+    font-size: 13px;
+    list-style: 24px;
+    border: none;
+    width: 82px;
+}
+
+.completed button {
+    background-color: #67b644;
+}
+
+.cancelled button {
+    background-color: #ff6b6b;
+}
+
+.refunded button {
+    background-color: #6db599;
+}
+
+.btn-ratesp button {
+    margin-top: 7px;
+    width: 70px;
+    font-size: 14px;
+    color: white;
+    background-color: #6da9b5;
+    border-radius: 17px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.fa {
+    color: #ecb91c;
+}
+
+
+
+.btn-cancel button {
+    width: 80px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 17px;
+    padding: 5px 10px;
+    box-shadow: none;
+    border: none;
+    margin-top: 8px;
+}
+
+/* service history-title */
+.shistory-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shistory-title p {
+    font-size: 22px;
+    line-height: 26px;
+    color: #646464;
+    font-weight: 500;
+}
+
+.shistory-title button {
+    padding: 6px 10px;
+    border-radius: 17px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #1d7a8c;
+    color: white;
+}
+
+/* pagination */
+.shistory-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paginations {
+    display: flex;
+    align-items: center;
+}
+
+.paginations div {
+    width: 45px;
+    cursor: pointer;
+    height: 45px;
+    margin: 0 1px;
+    padding-top: 7px;
+    text-align: center;
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.paginations .current-page {
+    background-color: #146371;
+    color: white;
+}
+
+.next-right img, .jump-right img {
+    transform: rotate(180deg);
+}
+
+.shistory-pagination .form-select {
+    width: 70px;
+    margin: auto 5px;
+}
+
+.shistory-pagination .form-select:focus {
+    box-shadow: none;
+}
+
+.shistory-pagination .show-apge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:570px) {
+    .shistory-pagination{
+        justify-content: center;
+    }
+}
+
+/*-----------modal SP rating------------- */
+#exampleModalRateSP .modal-content {
+    width: 450px;
+}
+
+#exampleModalRateSP .modal-dialog {
+    max-width: 450px;
+}
+
+#exampleModalRateSP hr {
+    margin-top: 2px;
+}
+
+#exampleModalRateSP .modal-body {
+    margin-top: 10px;
+}
+
+.m-ratings {
+    display: flex;
+}
+
+.m-ratings p {
+    width: 130px;
+}
+
+.m-ratings .info-ratings {
+    margin-left: 5px;
+}
+
+.m-button {
+    margin-top: 10px;
+}
+
+.m-heading {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.m-button button {
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    background-color: #1d7a8c;
+    color: white;
+}
+
+/*-----------For favorite Pros------------*/
+.pros{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content:flex-start;
+}
+.pro{
+    text-align: center;
+    width: 230px;
+    height: 280px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pro-avtar {
+    margin-top: 15px;
+    height: 90px;
+}
+.pro-avtar img{
+    width: 80px;
+}
+.pro-name{
+    font-weight: 500;
+}
+.pro-cleanings{
+    margin-top: 10px;
+}
+.pro-button{
+    margin: 10px auto;
+}
+.pro-button button{
+    padding: 5px 12px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+.button-remove{
+    background-color: #1d7a8c;
+}
+.button-block{
+    background-color: #ff6b6b;
+}
+
+/*----------Footer----------*/
+.message-icon {
+    display: none;
+}
+
+.scroll-icon {
+    display: none;
+}
+
+/*----------- Setting -----------*/
+.div-content .nav-tabs .nav-item.show .nav-link,.div-content .nav-tabs .nav-link.active{
+    border-width: 3px;
+    border-color: #fff #fff #29626d;
+}
+.div-content .nav-link:hover{
+    opacity: 0.9;
+    color: black;
+}
+.div-content .nav-tabs button{
+    width: 33%;
+}
+.div-content .nav-link{
+    color: black;
+}
+
+@media screen and (max-width:834px) {
+    .div-content .col-4{
+        width: 80%;
+    }
+    .div-content .col-3{
+        width: 40%;
+    }
+}
+@media screen and (max-width:540px) {
+    .div-content .col-4{
+        width: 100%;
+    }
+    .div-content .col-3{
+        width: 50%;
+    }
+}
+
+/*my detailes*/
+.my-detailes{
+    margin-top: 20px;
+}
+.my-detailes input, .my-detailes select, .my-detailes .input-group-text{
+    height: 50px;
+}
+.my-detailes .row{
+    margin-bottom: 40px;
+}
+.my-detailes .col-4{
+    margin-top: 10px;
+}
+.my-detailes .btn-detailes{
+    background-color: #29626d;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 8px 17px;
+}
+
+/*my-addresses*/
+.my-addresses table tbody tr td{
+    padding: 15px 2px;
+}
+.my-addresses table tbody tr td{
+    font-size: 17px;
+    letter-spacing: 1.3px;
+}
+.my-addresses table tbody tr td div{
+    font-weight: 500;
+}
+.my-addresses table tbody tr td div span{
+    font-weight: 300;
+}
+.btn-newaddress{
+    background-color: #29626d;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 8px 17px;
+}
+
+/*change password*/
+.change-password .form-group input{
+    height: 50px;
+    margin-top: 2px;
+}
+.change-password .row{
+    margin-top: 13px;
+}
+.change-password .btn-changepsw button{
+    background-color: #29626d;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 8px 17px;
+    margin-top: 15px;
+}
+
+/*----------- Navbar ------------*/
+
+.navbar {
+    background-color: #525252;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 73px;
+    height: 54px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 28px;
+}
+
+.nav-list {
+    margin-bottom: 0;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-btn {
+    border-radius: 20px;
+    background-color: #29626d;
+}
+
+.nav-btn:hover {
+    background-color: #525252;
+    color: white;
+    opacity: 1;
+}
+
+/* For Sticky Navbar */
+
+@media screen and (max-width:990px) {
+    #section-header {
+        z-index: 0;
+        padding-bottom: 10px;
+    }
+
+    .header-image {
+        background-size: 100% 100%;
+    }
+
+    .navbar-collapse {
+        z-index: 1;
+        background-color: #23565f;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .nav-item {
+        margin-left: 23px;
+        margin-top: 7px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.btn-dashboard button {
+        padding: 6px 10px;
+        border-radius: 17px;
+        font-size: 14px;
+        margin-bottom: 5px;
+        border: none;
+        color: white;
+        background-color: #1d7a8c;
+}
+
+.btn-dashboard .btn-cancel{
+    background-color: #ff6b6b;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 415px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* model navbar setting */
+#exampleModalnavbartoggle .modal-body, #exampleModalnavbartoggle .modal-footer {
+    justify-content: unset;
+}
+
+#exampleModalnavbartoggle .modal-body, #exampleModalnavbartoggle .modal-footer {
+    height: 65vh;
+}
+
+@media screen and (max-width:415px) {
+    .header-image {
+        display: block;
+    }
+}
+
+/* service schedule and reschedule modal */
+
+.modal-section-map iframe{
+    height: 100%;
+    width: 100%;
+}
+.modal-section-body div p{
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.modal-section-body .m-time{
+    font-size: 26px;
+}
+.modal-section-body .fa-times-circle-o{
+    color: rgb(255, 0, 0);
+}
+.modal-button{
+    padding-top: 7px;
+}
+.modal-button button{
+    width: 130px;
+    border-radius: 25px;
+    padding: 8px 10px; 
+    color: white;
+    border: none;
+}
+.modal-button button i{
+    margin-right: 5px;
+}
+.modal-button-cancel{
+   background-color: #ff6b6b; 
+}
+.modal-button-complete{
+    background-color: #348588;
+}
+
+.modal-section-body .m-currency{
+    font-size: 32px;
+    color: #348588;
+    font-weight: 700;
+}
+.modal-section-body hr{
+    margin: 6px 0;
+}
+.m-head{
+    font-weight: 500;
+}
+.modal-content{
+    padding: 10px;
+}
+.modal-header button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#exampleModalAddress .modal-dialog .modal-content{
+    width: 500px;
+}
+#exampleModalRateSP .modal-dialog{
+    top: 10%;
+}
+#exampleModalServiceReschedule .form-group input[type="date"]{
+    padding-right: 10px;
+}
+#exampleModalServiceDetailes .modal-content{
+    width: 1000px;
+}
+#exampleModalServiceDetailes .modal-dialog{
+    max-width: 1000px;
+}
+
+/* modal */
+#servicerequest .success-msg{
+    margin: 0;
+}
+#servicerequest .modal-footer{
+    justify-content: center;
+}
+
+/* by default th sorting-icon display none */
+.sorting-icon{
+    opacity: 0;
+}
+
+.table th{
+    cursor: pointer;
+}
+.table th:hover .sorting-icon{
+    opacity: 1;
+}
+
+.rescheduled-msg{
+    width: 150px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #67b644;
+    margin-bottom: 0px;
+}

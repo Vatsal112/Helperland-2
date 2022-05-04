@@ -1,0 +1,291 @@
+/* navabar setting */
+.navbar .navbar-brand {
+    font-family: SwzeraADF 'serif';
+    font-size: 37.5px;
+    line-height: 24.5px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: #1fb6ff;
+    color: white;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav-item {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.admin-user {
+    margin-right: 5px;
+}
+
+.navbar.sticky {
+    background-color: #1fb4ffef;
+    z-index: 99;
+}
+
+/* sidebar */
+.div-sidebar{
+    top: 60px;
+    height: 95vh;
+    background-color: white;
+    box-shadow: 2px 0 5.5px 0.5px rgb(0 0 0 / 10%);
+}
+.div-sidebar a{
+    border-bottom: 1px solid gray;
+    background-color: white;
+    color: #646464;
+    font-size: 16px;
+    padding: 14px 15px;
+}
+.sidebar-toggle i{
+    color: white;
+}
+.sidebar-toggle{
+    background-color: #1fb4ffb2;
+    top: 50px;
+}
+
+.sidebar-active{
+    color: #1fb4ff !important;
+}
+
+.div-main {
+    width: 100%;
+}
+
+
+.div-content {
+    padding: 70px 20px 0px 20px;
+    background-color: #f2f4f5;
+}
+
+.shistory-title p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #646464;
+}
+
+.shistory-title button {
+    width: 132px;
+    height: 36px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #1fb6ff;
+    color: white;
+}
+
+.shistory-title button span {
+    color: white;
+    margin-right: 3px;
+}
+
+/* seach bar */
+
+.search-bar {
+    background-color: #a9e3faa6;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.search-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-col{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.search-bar .search-row select, .search-bar .search-row input  {
+    height: 43px;
+}
+.search-bar .form-check{
+    padding-top: 7px;
+}
+.search-bar .form-check input{
+    height: 16px;
+}
+
+.col-buttons button {
+    font-size: 16px;
+    height: 43px;
+    padding: 0 12px;
+    border-radius: 4px;
+}
+.col-buttons{
+    display: flex;
+}
+.btn-search {
+    background-color: #1fb4ff;
+    color: white;
+    border: 1px solid #1fb4ff;
+    margin-right: 10px;
+}
+
+.btn-clear {
+    border: none;
+    background-color: white;
+    color: #646464;
+    border: 1px solid gray;
+}
+
+/* table setting */
+#servicehistory{
+    height: 100vh;
+}
+#servicehistory .table{
+    margin-bottom: 0;
+}
+#servicehistory .btn-status button {
+    margin-top: 0;
+}
+
+.btn-raction .dropdown-toggle::after {
+    display: none;
+}
+
+.btn-raction .dropdown .dropdown-toggle {
+    background-color: white;
+    border: none;
+}
+
+.btn-raction .dropdown .dropdown-toggle:focus {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 6px 10px 6px 14px;
+}
+
+.btn-raction .dropdown-menu button {
+    color: grey;
+}
+
+.btn-raction .dropdown-menu button:focus {
+    background-color: white;
+}
+
+/* pagination */
+.paginations div {
+    border-radius: 0;
+    margin: 0;
+    color: #646464;
+}
+
+.paginations .current-page {
+    background-color: #565656;
+    color: white;
+}
+
+/* shistory-footer */
+.shistory-footer{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 24px;
+    color: #a2a6a8;
+}
+
+/* shistory-pagination */
+.shistory-pagination{
+    padding:10px;
+    background-color: white;
+    margin-top: 0;
+}
+
+/* navabr modal setting  */
+#exampleModalnavbartoggle .modal-content{
+    height: 120vh;
+}
+#exampleModalRedund .modal-content{
+    width: 500px;
+}
+#exampleModalnavbartoggle .modal-body{
+    height: 80vh;
+}
+#exampleModaledit .modal-content{
+    width: 100%;
+}
+
+.btn-modal{
+    background-color: #1fb6ff;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: none;
+}
+.btn-modal:focus{
+    background-color: #1fb6ff;
+    color: white;
+    box-shadow: none;
+}
+.btn-modal:hover{
+    color: rgba(255, 255, 255, 0.651);
+}
+
+/* servicerequest setting */
+.service-status p{
+    text-align: center;
+    width: fit-content;
+}
+.service-status.pending p{
+    background-color: #1fb6ffda;
+}
+.service-status.new p{
+    background-color: #f2bb37da;
+}
+.service-status.na p,.service-status.cancelled P{
+    background-color: #f23737da;
+}
+.service-status.completed P,.Active button{
+    background-color: #28b834;
+}
+.InActive button{
+    background-color: #b82828;
+}
+.service-status.settled P{
+    background-color: #28b834;
+}
+.service-status.refunded p{
+    background-color: #7589df;
+}
+.service-status p{
+    color: white;
+    background-color: white;
+    padding: 3px 8px;
+}
+
+.td-address{
+    width: 150px;
+}
+
+.div-date input{
+    padding-left: 40px;
+}
+.div-date{
+    position: relative;
+}
+.div-date img{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 9px;
+    top: 11px;
+}
+.alert{
+    padding: 2px;
+}
+.alert ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2px;
+}
+.error{
+    color: red;
+}

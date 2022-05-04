@@ -1,0 +1,189 @@
+/* Model CSS */
+
+.modal-content {
+    width: 400px;
+    padding: 15px;
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.form-group input {
+    padding-right: 40px;
+}
+
+.submit-button {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #1d7a8c;
+    color: white;
+    border-radius: 40px;
+}
+
+.icon-textbox {
+    position: relative;
+}
+
+.icon-textbox img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Modal Logout */
+#exampleLogout .modal-content, #sessionexpired .modal-content {
+    padding: 0;
+}
+
+.success-icon .img-wrapper {
+    background-color: #67b644;
+    display: flex;
+    width: 75px;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border-radius: 50px;
+    margin: 10px auto;
+}
+
+.success-icon .img-wrapper img {
+    width: 28px;
+}
+
+.success-msg {
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 42px;
+    text-align: center;
+    color: #686867;
+}
+
+#exampleLogout .modal-footer, #sessionexpired .modal-footer {
+    justify-content: center;
+}
+
+.modal-footer button {
+    background-color: #1d7a8c;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 7px 18px;
+}
+
+/* Rate sp model for customer*/
+#Ratesp {
+    color: #646464;
+}
+
+#Ratesp .modal-header {
+    border-bottom: none;
+}
+
+#Ratesp .modal-header .btn-close {
+    margin-top: auto;
+}
+
+#Ratesp .modal-header>div {
+    display: flex;
+}
+
+#Ratesp .modal-header>div span {
+    display: block;
+    margin: 1px;
+}
+
+#Ratesp .modal-header>div .cap {
+    border: 1px solid #aaa;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+#Ratesp .modal-header>div .cap img {
+    height: 20px;
+    width: 30px;
+}
+
+#Ratesp .modal-body {
+    padding-top: 0;
+}
+
+#Ratesp .modal-body .rate-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#Ratesp .modal-body .rate {
+    display: flex;
+}
+
+#Ratesp .rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#Ratesp .rating-stars ul>li.star {
+    display: inline-block;
+}
+
+#Ratesp .rating-stars ul>li.star>i.fa {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+#Ratesp .rating-stars ul>li.star.hover>i.fa {
+    cursor: pointer;
+    color: #FFCC36;
+}
+
+#Ratesp .rating-stars ul>li.star.selected>i.fa {
+    color: #FF912C;
+}
+
+#Ratesp .modal-body .submit button {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 46px;
+    border: none;
+    outline: none;
+    background-color: #1D7A8C;
+    color: white;
+}
+#Ratesp .rate-heading{
+    margin-right: 10px;
+}
+
+#Ratesp .info-ratings {
+    display: flex;
+    align-items: center;
+}
+
+.modal-dialog{
+    justify-content: center;
+}
+
+#exampleModallogin .modal-content, #exampleModalfpwd .modal-content {
+    width: 345px;
+    padding: 5px;
+}
+
+/* #Ratesp .td-rating .rating-user img {
+    width: 22px;
+    height: 17px;
+}
+
+#Ratesp .rating-user {
+    padding: 12px;
+} */

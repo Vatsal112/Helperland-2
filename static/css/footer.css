@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+/*################ Newsseltter ################*/
+
+#section-newsseltter .scroll-icon{
+    position: fixed;
+    bottom: 190px;
+    left: 50px;
+    display: none;
+}
+#section-newsseltter {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 53px;
+    padding-top: 35px;
+    margin: 0;
+    position: relative;
+    background-color: #f4f5f8;
+}
+
+.newstitle {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+
+.newsform {
+    display: flex;
+    justify-content: center;
+}
+
+.newsform button {
+    width: 88px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff7b6d;
+}
+
+.newsform .input-field input {
+    width: 233px;
+    height: 40px;
+    padding: 14px 131px 16px 22px;
+    margin-right: 11px;
+    border-radius: 20px;
+    border: solid 1px #565656;
+    background-color: #f4f5f8;
+}
+
+.scroll-icon{
+    background-color: #525252;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+
+.message-icon{
+    position: fixed;
+    bottom: 190px;
+    right: 50px;
+    cursor: pointer;
+}
+.f-sub{
+    color: #9ba0a3;
+    text-align: center;
+}
+.f-sub p a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 362px) {
+    #section-footer{
+        padding: 10px;
+    }
+    .newsform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-field {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #section-footer{
+        padding: 10px;
+    }
+    .newsform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-field {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width:663px) {
+    .message-icon{
+        bottom: 200px;
+        right: 10px;
+    }
+    #section-newsseltter .scroll-icon{
+        bottom: 200px;
+        left: 5px;
+    }
+} 
+
+@media screen and (max-width: 990px) {
+    .okbtn{
+        float: none;
+        margin-left: 10px;
+    }
+}
+
+
+
+/*############### footer ##############*/
+
+#section-footer {
+    margin-bottom: auto;
+    padding: 2% 12%;
+    color:#F1F1F1;
+    background-color: #111111f5;
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav ul{
+    margin-bottom: 0;
+}
+
+.footer-logo img{
+    width: 106px;
+    height: 78px;
+}
+.footer-social {
+    margin: auto 0;
+}
+
+.footer-social img {
+    margin-left: 10px;
+    float: right;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1202px) {
+
+    .footer-nav ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav ul li {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 4%;
+        margin-top: 2px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social img {
+        float: none;
+    }
+}
+
